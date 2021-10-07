@@ -9,7 +9,7 @@ d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vQYJmPtamh2b_IdC9pK1hgeB
     }
 
     var data = [];
-    var count = unpack(rows, 'Count');
+    var count = unpack(rows, 'cnt');
     var startLongitude = unpack(rows, 'start_lon');
     var endLongitude = unpack(rows, 'end_lon');
     var startLat = unpack(rows, 'start_lat');
@@ -26,7 +26,7 @@ d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vQYJmPtamh2b_IdC9pK1hgeB
             mode: 'lines',
             line: {
                 width: 1,
-                color: 'orange'
+                color: 'red'
             },
             opacity: opacityValue
         };
@@ -35,7 +35,7 @@ d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vQYJmPtamh2b_IdC9pK1hgeB
     };
 
     var layout = {
-        title: 'Feb. 2011 American Airline flight paths',
+        title: 'ISS FALL 2021',
         showlegend: false,
         width: 1000,
         height: 1000,
