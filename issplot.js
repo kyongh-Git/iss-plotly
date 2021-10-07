@@ -16,7 +16,7 @@ d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vQYJmPtamh2b_IdC9pK1hgeB
     var endLat = unpack(rows, 'end_lat');
 
     for ( var i = 0 ; i < count.length; i++ ) {
-        var opacityValue = count[i]/getMaxOfArray(count);
+        var opacityValue = 5*count[i]/getMaxOfArray(count);
 
         var result = {
             type: 'scattergeo',
@@ -37,8 +37,8 @@ d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vQYJmPtamh2b_IdC9pK1hgeB
     var layout = {
         title: 'ISS FALL 2021',
         showlegend: false,
-        width: 1000,
-        height: 1000,
+        width: 500,
+        height: 500,
         geo:{
             scope: 'world',
             projection: {
